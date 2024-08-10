@@ -7,6 +7,81 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="title">KALKULATOR BMI</h1>
+    </header>
+    <main>
+        <aside>
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+            </article>
+            <form>
+                <div>
+                    <h3>Jenis Kelamin</h3>
+                    <input type="radio" id="laki-laki" name="jenis kelamin" value="laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <br>
+                <div>
+                    <label class="input" for="berat badan">Berat Badan (Kg)</label><br>
+                    <input type="number" id="berat badan"><br>
+                    <label class="input" for="umur">Umur (Tahun)</label><br>
+                    <input type="number" id="umur" ><br>
+                    <label class="input" for="tinggi badan">Tinggi Badan (cm)</label><br>
+                    <input type="number" id="tinggi badan" ><br>
+                </div>
+
+                <div>
+                    <button class="button bg-coral">Hitung</button>
+                    <button class="button bg-reset">Reset</button>
+                </div>
+
+            </form>
+            <article>
+                <h3>Keunggulan Fitur</h3>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh menggunakan kalkulator ini) dan jika Anda tidak yakin dengan hasilnya, harus disemak ulang oleh seorang dokter atau profesional yang memenuhi syarat seperti dokter.</p>
+                <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, yaitu Indeks Massa Tubuh (BMI).</p>
+            </article>
+        </aside>
+        <aside>
+            <section>
+            
+                <div id="output-container">
+                    <h2>Hasil</h2>
+                    <div id="last">
+                        <h3>Demonstrating Hasil</h3>
+                        <div id="output-download">
+                            <button onclick="downloadBMI()" class="btn-success">Download Hasil BMI</button>
+                        </div>
+                    </div>
+                    <div id="output-description"></div>
+                    <div id="output-diseases"></div>
+                    <div>
+                        <br>
+                        <button class="button bg-coral">Konsultasi Ahli Via Aplikasi</button>
+                        <button class="button bg-reset">Registrasi Online Ahli Gizi</button>
+                    </div>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
+                    <div id="last">Demonstrating the Box Model</div>
+                    <div id="download-app">
+                        <!-- Tautan ke aplikasi -->
+                        <p>Dapatkan Aplikasi melalui</p>
+                        <div>
+                            <a href="#"><img src="assets\googleplay.png" alt="Download melalui Play Store"></a>
+                            <a href="#"><img src="assets\app store.jfif" alt="Download melalui App Store"></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        </aside>
+    </main>
+    <footer></footer>
 </body>
 </html>
