@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KALKULATOR BMI</title>
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -26,16 +27,25 @@
                 <br>
                 <div>
                     <label class="input" for="berat badan">Berat Badan (Kg)</label><br>
-                    <input type="number" id="berat badan"><br>
+                    <div class="input-container">
+                        <i class="fas fa-weight icon"></i>
+                        <input class="input-field" type="number" placeholder="masukkan Berat badan" id="weight">
+                    </div>
                     <label class="input" for="umur">Umur (Tahun)</label><br>
-                    <input type="number" id="umur" ><br>
+                    <div class="input-container">
+                        <i class="fas fa-pen icon"></i>
+                        <input class="input-field" type="number" placeholder="masukkan umur" id="age">
+                    </div>
                     <label class="input" for="tinggi badan">Tinggi Badan (cm)</label><br>
-                    <input type="number" id="tinggi badan" ><br>
+                    <div class="input-container">
+                        <i class="fas fa-ruler-vertical icon"></i>
+                        <input class="input-field" type="number" placeholder="masukkan tinggi badan" id="height">
+                    </div>
                 </div>
 
                 <div>
-                    <button class="button bg-coral">Hitung</button>
-                    <button class="button bg-reset">Reset</button>
+                    <button type="button" class="btn bg-coral" onclick="hitung()">Hitung</button>
+                    <button type="reset" class="btn bg-reset">Reset</button>
                 </div>
 
             </form>
@@ -50,38 +60,48 @@
                 <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, yaitu Indeks Massa Tubuh (BMI).</p>
             </article>
         </aside>
+
         <aside>
-            <section>
-            
-                <div id="output-container">
-                    <h2>Hasil</h2>
-                    <div id="last">
-                        <h3>Demonstrating Hasil</h3>
-                        <div id="output-download">
-                            <button onclick="downloadBMI()" class="btn-success">Download Hasil BMI</button>
-                        </div>
-                    </div>
-                    <div id="output-description"></div>
-                    <div id="output-diseases"></div>
-                    <div>
-                        <br>
-                        <button class="button bg-coral">Konsultasi Ahli Via Aplikasi</button>
-                        <button class="button bg-reset">Registrasi Online Ahli Gizi</button>
-                    </div>
-                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang.Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
-                    <div id="last">Demonstrating the Box Model</div>
-                    <div id="download-app">
-                        <!-- Tautan ke aplikasi -->
-                        <p>Dapatkan Aplikasi melalui</p>
-                        <div>
-                            <a href="#"><img src="assets\googleplay.png" alt="Download melalui Play Store"></a>
-                            <a href="#"><img src="assets\app store.jfif" alt="Download melalui App Store"></a>
-                        </div>
-                    </div>
+            <section id="result" class="container d-hidden">
+                <h2 class="title">Hasil</h2>
+                <div class="sub-container mb-1">
+                  <h3 id="result-title" class="result-title"></h3>
+                  <div id="result-bmi" class="result-bmi"></div>
+                  <p id="result-desc" class="result-desc"></p>
+                  <button class="btn">Download Hasil BMI</button>
                 </div>
+                <div class="mb-1 paragraph">
+                  <p id="result-text"></p>
+                  <p id="suggestion-text"></p>
+                  <p id="advice-text"></p>
+                  <div class="button-cta">
+                    <button class="btn">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button class="btn">Registrasi Online Ahli Gizi</button>
+                  </div>
+                  <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                  </p>
+                </div>
+                <div class="sub-container paragraph">
+                  <h6 id="risk-title"></h6>
+                  <ul id="list-risk" class="list-risk"></ul>
+                  <div class="button-cta">
+                    <button class="btn">Konsultasi Dokter Via Aplikasi</button>
+                    <button class="btn">Registrasi Online Sekarang</button>
+                  </div>
+                </div>
+                    <div class="download-app">
+                        <h4>Dapatkan Aplikasi melalui</h4>
+                        <div class="button-cta">
+                            <img src="assets\googleplay.png" alt="Google Play" class="img" aria-label="Download di Google Play">
+                            <img src="assets\app store.jfif" alt="Apple Store" class="img" aria-label="Download di Apple Store">
+                          </div>
+                    </div>
         </section>
         </aside>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Dibuat dan didesain oleh <a href="https://www.instagram.com/bara_nugrohooo/">Bara Abdi Nugroho</a></p>
+    </footer>
 </body>
 </html>

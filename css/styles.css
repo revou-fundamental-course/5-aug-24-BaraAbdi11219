@@ -8,8 +8,13 @@ body {
     background-color: #fff;
     color: #000;
 }
+header{
+    margin: auto 10px;
+    height: 2px;
+}
 main{
     display: flex;
+    
 }
 aside{
     padding: 48px;
@@ -23,74 +28,121 @@ p{
     text-align: justify;
     size: 14px;
 }
-input[type=number]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0px;
-    display: inline-block;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-family: monospace;
-    font-size: 14px;
-}
+
 .input{ 
     font-size: 18px;
     font-weight: bold;
 }
-.button{
-    height: 32px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 8px;
-    margin-right: 12px;
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(3, 188, 250);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    
+}
+.btn:hover {
+    background-color: #136767;
+  }
 .bg-coral{
-    background-color: coral;
+    background-color: rgb(35, 251, 2);
 }
 .bg-reset{
     background-color: red;
     color: white;
 }
+.btn-reset:hover {
+    background-color: #c3c2c2;
+  }
 /* output */
-.box-center {
-    align-items: center;
-}
-.box-output {
-    background-color: lightgrey;
+.sub-container {
+    background-color: rgb(187, 250, 209);
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px;
-    border-radius: 8px;
-}
-
-#output-tag {
-    font-size: xx-large;
-}
-
-#output-bmi {
-    font-size: 144px;
-}
-
-#output-category {
-    font-size: larger;
-}
-#last {
-    background-color: lightgrey;
+    align-items: center;
+  }
+  
+  .result-title {
+    font-size: 18px;
+  }
+  
+  .result-bmi {
+    font-size: 40px;
+  }
+  
+  .result-desc {
+    margin: 10px 0 20px;
+    font-size: 15px;
+  }
+  
+  .button-cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .button-cta button {
+    font-size: 12px;
+  }
+  
+  .list-risk {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .img {
     width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-}
+    width: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
 
-#download-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-#download-app img {
+  footer {
     height: 32px;
+    font-size: small;
+    padding-top: 48px;
+}
+footer p{
+    text-align: center;
+}
+footer a {
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+    font-weight: bold;
 }
