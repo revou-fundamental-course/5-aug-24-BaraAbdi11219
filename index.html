@@ -19,9 +19,9 @@
             <form>
                 <div>
                     <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="laki-laki" name="jenis kelamin" value="laki-laki">
+                    <input type="radio" id="male" name="jenis kelamin" value="laki-laki">
                     <label for="laki-laki">Laki-laki</label>
-                    <input type="radio" id="perempuan" name="jenis kelamin" value="perempuan">
+                    <input type="radio" id="female" name="jenis kelamin" value="perempuan">
                     <label for="perempuan">Perempuan</label>
                 </div>
                 <br>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div>
-                    <button type="button" class="btn bg-coral" onclick="hitung()">Hitung</button>
+                    <button type="button" class="btn" onclick="calculateBMI()">Hitung BMI</button>
                     <button type="reset" class="btn bg-reset">Reset</button>
                 </div>
 
@@ -83,7 +83,7 @@
                   </p>
                 </div>
                 <div class="sub-container paragraph">
-                  <h6 id="risk-title"></h6>
+                  <h6 id="risk-title" class="risk-title" ></h6>
                   <ul id="list-risk" class="list-risk"></ul>
                   <div class="button-cta">
                     <button class="btn">Konsultasi Dokter Via Aplikasi</button>
@@ -103,5 +103,6 @@
     <footer>
         <p>Dibuat dan didesain oleh <a href="https://www.instagram.com/bara_nugrohooo/">Bara Abdi Nugroho</a></p>
     </footer>
+    <script src="js\scripts.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: 0 auto; /* Mengatur margin auto untuk mengatur konten ke tengah */
-    background-color: #fff;
+    background-color: white;
     color: #000;
 }
 header{
@@ -81,10 +81,15 @@ p{
 .btn-reset:hover {
     background-color: #c3c2c2;
   }
+  .title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 /* output */
 .sub-container {
     background-color: rgb(187, 250, 209);
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,6 +97,7 @@ p{
   
   .result-title {
     font-size: 18px;
+    margin-top: 0px;
   }
   
   .result-bmi {
@@ -114,9 +120,16 @@ p{
     font-size: 12px;
   }
   
+.risk-title{
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
   .list-risk {
     list-style: none;
     text-align: center;
+    
+    
   }
   
   .download-app {
@@ -140,6 +153,7 @@ p{
 }
 footer p{
     text-align: center;
+    font-size: 18px;
 }
 footer a {
     color: rgb(0, 110, 255);
