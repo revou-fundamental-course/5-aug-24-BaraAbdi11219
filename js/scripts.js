@@ -29,7 +29,6 @@
         document.getElementById("risk-title").innerHTML = "Beberapa penyakit yang berasal dari UNDERWEIGHT";
         document.getElementById("list-risk").innerHTML = "<li>Kekurangan gizi</li><li>Gangguan pertumbuhan</li><li>Sistem kekebalan tubuh lemah</li><li>Gangguan kesuburan</li>";
         
-        
     }else if(bmi<25){
         document.getElementById("result-title").innerHTML = "NORMAL";
         document.getElementById("result-desc").innerHTML = "Berat Badan Anda Normal";
@@ -56,7 +55,22 @@
         document.getElementById("risk-title").innerHTML = "Beberapa penyakit yang berasal dari OBESITAS";
         document.getElementById("list-risk").innerHTML = "<li>Penyakit Jantung</li><li>Stroke</li><li>Kanker</li><li>Masalah Pencernaan</li>";
     }
-
-
-
 }
+//membuat reset
+function resetbmi(){
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('male').checked = false;
+    document.getElementById('female').checked = false;
+    document.getElementById('result-title').textContent = '';
+    document.getElementById('result-bmi').textContent = '';
+    document.getElementById('result-desc').textContent = '';
+    document.getElementById('result-text').textContent = '';
+    document.getElementById('suggestion-text').textContent = '';
+    document.getElementById('advice-text').textContent = '';
+    document.getElementById('risk-title').textContent = '';
+    document.getElementById('list-risk').textContent = '';
+}
+
+

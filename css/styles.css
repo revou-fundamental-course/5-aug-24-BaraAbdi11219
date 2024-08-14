@@ -1,176 +1,194 @@
-.title{
-    text-align: center;
-}
+/* css */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto; /* Mengatur margin auto untuk mengatur konten ke tengah */
-    background: linear-gradient(to right, rgb(97, 229, 255),rgb(234, 153, 2));
-    color: #000;
-}
-header{
-    margin: auto 10px;
-    height: 2px;
-}
-main{
-    display: flex;
-    
-}
-aside{
-    padding: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto; /* Mengatur margin auto untuk mengatur konten ke tengah */
+  background: linear-gradient(to right, rgb(97, 229, 255),rgb(234, 153, 2));
+  color: #000;
 }
 
-form{
-    padding: 12px;
-    background-color: lightblue;
+header{
+  margin: auto 10px;
+  height: 2px;
 }
+
+.title{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(245, 179, 92);
+}
+main{
+  display: flex;
+}
+
+aside{
+  padding: 48px;
+}
+/* mengatur form */
+form{
+  padding: 12px;
+  background-color: lightblue;
+}
+
 p{
-    text-align: justify;
-    size: 14px;
+  text-align: justify;
+  size: 14px;
 }
 
 .input{ 
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 .input-container {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .icon {
-    padding: 10px;
-    background: dodgerblue;
-    color: white;
-    min-width: 50px;
-    text-align: center;
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
 }
 .input-field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  outline: none;
 }
 
 .input-field:focus {
-    border: 2px solid dodgerblue;
+  border: 2px solid dodgerblue;
 }
 
 .btn{
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    background-color: rgb(3, 188, 250);
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color .3s ease-in-out;
-    
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: rgb(3, 188, 250);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
 }
 .btn:hover {
-    background-color: #136767;
-  }
+  background-color: #136767;
+}
 .bg-coral{
-    background-color: rgb(35, 251, 2);
+  background-color: rgb(35, 251, 2);
 }
 .bg-reset{
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 .btn-reset:hover {
-    background-color: #c3c2c2;
-  }
-  .title{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
+  background-color: #c3c2c2;
+}
+
 /* mengatur Hasil */
 .sub-container {
-    background-color: rgb(187, 250, 209);
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .result-title {
-    font-size: 18px;
-    margin-top: 0px;
-  }
-  
-  .result-bmi {
-    font-size: 40px;
-  }
-  
-  .result-desc {
-    margin: 10px 0 20px;
-    font-size: 15px;
-  }
-  .suggestion{
-    margin-bottom: 0px;
-  }
-  .advice{
-    margin: 0px;
-  }
-  
-  .button-cta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  
-  .button-cta button {
-    font-size: 12px;
-    margin-bottom: 1px;
-  }
-  
+  background-color: rgb(187, 250, 209);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-title {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.result-bmi {
+  font-size: 40px;
+}
+
+.result-desc {
+  margin: 10px 0 20px;
+  font-size: 15px;
+}
+
+.suggestion{
+  margin-bottom: 0px;
+}
+
+.advice{
+  margin: 0px;
+}
+
+.button-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.button-cta button {
+  font-size: 12px;
+  margin-bottom: 1px;
+}
+
 .risk-title{
   font-size: 18px;
   margin-top: 2px;
   margin-bottom: 2px;
 }
-  .list-risk {
-    list-style: none;
-    text-align: center;
-    
-    
-  }
-  
-  .download-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px 0;
-  }
+.list-risk {
+  list-style: none;
+  text-align: center; 
+}
 
-  h4{
-    margin-bottom: 1px;
-    margin-top: 1px;
-  }
-  
-  .img {
-    width: 300px;
-    width: 100px;
-    cursor: pointer;
-    border-radius: 8px;
-  }
+.download-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+}
 
- /*  mengatur footer */
+h4{
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
 
-  footer {
-    height: 32px;
-    font-size: small;
-    padding-top: 48px;
+.img {
+  width: 300px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/*  mengatur footer */
+
+footer {
+  height: 32px;
+  font-size: small;
+  padding-top: 48px;
 }
 footer p{
-    text-align: center;
-    font-size: 18px;
+  text-align: center;
+  font-size: 18px;
 }
 footer a {
-    color: rgb(0, 110, 255);
-    text-decoration: none;
-    font-weight: bold;
+  color: rgb(0, 110, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* pengaturan device */
+@media only screen and (max-width: 480px) {
+  main{
+    flex-direction: column; /* Mengatur agar kontainer input dan output sejajar pada tampilan desktop */
+    justify-content: space-around; /* Mengatur agar kontainer input dan output sejajar pada tampilan desktop */
+  }
+
+  .containerawal, .containerakhir {
+      width: 45%; /* Mengatur agar kontainer input dan output memiliki lebar yang sama pada tampilan desktop */
+  }
+  
+  .containerawal {
+      margin-right: 12px; /* Menambahkan jarak antara input dan output container */
+  }
 }

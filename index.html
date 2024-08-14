@@ -12,16 +12,17 @@
         <h1 class="title">KALKULATOR BMI</h1>
     </header>
     <main>
-        <aside>
+    <!-- awal tampilan kiri -->
+        <aside class="container_awal">
             <article>
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
             </article>
             <form>
                 <div>
                     <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="male" name="jenis kelamin" value="laki-laki">
+                        <input type="radio" id="male" name="jenis kelamin" value="laki-laki">
                     <label for="laki-laki">Laki-laki</label>
-                    <input type="radio" id="female" name="jenis kelamin" value="perempuan">
+                        <input type="radio" id="female" name="jenis kelamin" value="perempuan">
                     <label for="perempuan">Perempuan</label>
                 </div>
                 <br>
@@ -36,18 +37,16 @@
                         <i class="fas fa-pen icon"></i>
                         <input class="input-field" type="number" placeholder="masukkan umur" id="age">
                     </div>
-                    <label class="input" for="tinggi badan">Tinggi Badan (cm)</label><br>
+                    <label class="input" for="">Tinggi Badan (cm)</label><br>
                     <div class="input-container">
                         <i class="fas fa-ruler-vertical icon"></i>
                         <input class="input-field" type="number" placeholder="masukkan tinggi badan" id="height">
                     </div>
                 </div>
-
                 <div>
                     <button type="button" class="btn" onclick="calculateBMI()">Hitung BMI</button>
-                    <button type="reset" class="btn bg-reset">Reset</button>
+                    <button type="button" class="btn bg-reset" onclick="resetbmi()">Reset</button>
                 </div>
-
             </form>
             <article>
                 <h3>Keunggulan Fitur</h3>
@@ -60,49 +59,54 @@
                 <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, yaitu Indeks Massa Tubuh (BMI).</p>
             </article>
         </aside>
+    <!-- akhir tampilan kiri -->
 
-        <aside>
+    <!-- awal tampilan kanan -->
+        <aside class="containerakhir">
             <section id="result" class="container d-hidden">
                 <h2 class="title">Hasil</h2>
                 <div class="sub-container mb-1">
-                  <h3 id="result-title" class="result-title"></h3>
-                  <div id="result-bmi" class="result-bmi"></div>
-                  <p id="result-desc" class="result-desc"></p>
-                  <button class="btn">Download Hasil BMI</button>
+                    <h3 id="result-title" class="result-title"></h3>
+                    <div id="result-bmi" class="result-bmi"></div>
+                    <p id="result-desc" class="result-desc"></p>
+                    <button class="btn">Download Hasil BMI</button>
                 </div>
                 <div class="mb-1 paragraph">
-                  <p id="result-text"></p>
-                  <p id="suggestion-text" class="suggestion"></p>
-                  <p id="advice-text" class="advice"></p>
-                  <div class="button-cta">
-                    <button class="btn">Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button class="btn">Registrasi Online Ahli Gizi</button>
-                  </div>
-                  <p>
-                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
-                  </p>
+                    <p id="result-text"></p>
+                    <p id="suggestion-text" class="suggestion"></p>
+                    <p id="advice-text" class="advice"></p>
+                    <div class="button-cta">
+                        <button class="btn">Konsultasi Ahli Gizi Via Aplikasi</button>
+                        <button class="btn">Registrasi Online Ahli Gizi</button>
+                    </div>
+                    <article>
+                        <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda</p>
+                    </article>
                 </div>
                 <div class="sub-container paragraph">
-                  <h6 id="risk-title" class="risk-title" ></h6>
-                  <ul id="list-risk" class="list-risk"></ul>
-                  <div class="button-cta">
-                    <button class="btn">Konsultasi Dokter Via Aplikasi</button>
-                    <button class="btn">Registrasi Online Sekarang</button>
-                  </div>
-                </div>
-                    <div class="download-app">
-                        <h4>Dapatkan Aplikasi melalui</h4>
-                        <div class="button-cta">
-                            <img src="assets\googleplay.png" alt="Google Play" class="img" aria-label="Download di Google Play">
-                            <img src="assets\app store.jfif" alt="Apple Store" class="img" aria-label="Download di Apple Store">
-                          </div>
+                    <h6 id="risk-title" class="risk-title" ></h6>
+                    <ul id="list-risk" class="list-risk"></ul>
+                    <div class="button-cta">
+                        <button class="btn">Konsultasi Dokter Via Aplikasi</button>
+                        <button class="btn">Registrasi Online Sekarang</button>
                     </div>
-        </section>
+                </div>
+                <div class="download-app">
+                    <h4>Dapatkan Aplikasi melalui</h4>
+                    <div class="button-cta">
+                        <img src="assets\googleplay.png" alt="Google Play" class="img" aria-label="Download di Google Play">
+                        <img src="assets\app store.jfif" alt="Apple Store" class="img" aria-label="Download di Apple Store">
+                    </div>
+                </div>
+            </section>
         </aside>
+        <!-- akhir tampilan kanan -->
     </main>
+    <!-- bagian footer -->
     <footer>
         <p>Dibuat dan didesain oleh <a href="https://www.instagram.com/bara_nugrohooo/">Bara Abdi Nugroho</a></p>
     </footer>
+    <!-- akhir footer -->
     <script src="js\scripts.js"></script>
 </body>
 </html>
