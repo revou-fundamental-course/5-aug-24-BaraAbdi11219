@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1200px;
     margin: 0 auto; /* Mengatur margin auto untuk mengatur konten ke tengah */
-    background-color: white;
+    background: linear-gradient(to right, rgb(97, 229, 255),rgb(234, 153, 2));
     color: #000;
 }
 header{
@@ -86,7 +86,7 @@ p{
     margin-top: 10px;
     margin-bottom: 5px;
   }
-/* output */
+/* mengatur Hasil */
 .sub-container {
     background-color: rgb(187, 250, 209);
     padding: 10px 0;
@@ -108,6 +108,12 @@ p{
     margin: 10px 0 20px;
     font-size: 15px;
   }
+  .suggestion{
+    margin-bottom: 0px;
+  }
+  .advice{
+    margin: 0px;
+  }
   
   .button-cta {
     display: flex;
@@ -118,6 +124,7 @@ p{
   
   .button-cta button {
     font-size: 12px;
+    margin-bottom: 1px;
   }
   
 .risk-title{
@@ -136,7 +143,12 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
+  }
+
+  h4{
+    margin-bottom: 1px;
+    margin-top: 1px;
   }
   
   .img {
@@ -145,6 +157,8 @@ p{
     cursor: pointer;
     border-radius: 8px;
   }
+
+ /*  mengatur footer */
 
   footer {
     height: 32px;

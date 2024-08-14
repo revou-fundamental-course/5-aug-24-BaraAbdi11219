@@ -18,7 +18,8 @@
     let bmi = weight / (height/100)** 2
     let result = bmi.toFixed(2)
     document.getElementById("result-bmi").innerHTML = result;
-
+    
+     //hasil
     if(bmi<18.5){
         document.getElementById("result-title").innerHTML = "UNDERWEIGHT";
         document.getElementById("result-desc").innerHTML = "Anda Kekurangan Berat Badan";
