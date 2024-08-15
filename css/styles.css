@@ -188,8 +188,8 @@ footer a {
       width: 45%; /* Mengatur agar kontainer input dan output memiliki lebar yang sama pada tampilan desktop */
   }
   
-  .containerawal{
-      margin-right: 10px; /* Menambahkan jarak antara input dan output container */
+  .containerawal {
+      margin-right: 11px; /* Menambahkan jarak antara input dan output container */
   }
   
 }
